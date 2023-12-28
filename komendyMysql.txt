@@ -1,0 +1,11 @@
+SELECT * FROM 'categories'
+
+SELECT CustomerName, City, Country FROM 'customers'
+
+SELECT ProductName, Price FROM 'products'
+
+SELECT LastName, BirthDate FROM 'employees'
+
+SELECT CustomerID, OrderDate, ShipperID FROM 'orders'
+
+SELECT SupplierName, Address FROM 'suppliers'
