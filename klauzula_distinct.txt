@@ -1,0 +1,3 @@
+SELECT DISTINCT Country FROM customers;
+
+SELECT DISTINCT Price FROM products;
