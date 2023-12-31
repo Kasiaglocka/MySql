@@ -1,0 +1,27 @@
+SELECT ContactName, Country FROM customers WHERE Country = "Mexico";
+
+
+SELECT ContactName, City, Country FROM customers WHERE Country = "Germany";
+
+
+SELECT * FROM customers WHERE City = "Berlin";
+
+
+SELECT ProductName FROM products WHERE Price > 25;
+
+
+SELECT ProductName FROM products WHERE Price = 18;
+
+
+SELECT ProductName, Price FROM products WHERE Price > 10;
+
+
+SELECT ProductName FROM products WHERE Price < 10;
+
+
+SELECT ProductName, Price FROM products WHERE Price <= 25;
+
+
+SELECT ProductName, Price FROM products WHERE Price >=21;
+
+
