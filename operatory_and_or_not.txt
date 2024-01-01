@@ -1,0 +1,28 @@
+SELECT ContactName, Country, City FROM customers WHERE Country = "France" AND City = "Marsylia";
+
+
+
+SELECT ProductName, CategoryID, Price FROM products WHERE CategoryID = 2 AND Price > 10;
+
+
+
+SELECT * FROM customers WHERE Country = "Germany" AND City = "Berlin";
+
+
+
+SELECT  * FROM customers WHERE Country = "Germany" OR Country = "Mexico";
+
+
+
+SELECT ContactName, Country FROM customers WHERE NOT Country = "UK";
+
+
+
+SELECT ContactName, Country FROM customers WHERE Country != "Spain";
+
+
+
+SELECT ContactName, Country FROM customers WHERE Country != "Spain" AND Country != "Mexico";
+
+
+
