@@ -1,0 +1,30 @@
+SELECT COUNT(ContactName) FROM customers WHERE Country = "Spain";
+
+
+SELECT COUNT(ContactName) FROM customers WHERE Country = "Germany" OR Country = "Mexico";
+
+
+SELECT COUNT(ContactName) FROM customers WHERE City = "London";
+
+
+SELECT COUNT(LastName) FROM employees WHERE BirthDate > 1968;
+
+
+SELECT ProductName, Price FROM products WHERE CategoryID = 2;
+
+
+SELECT AVG(Price) FROM products WHERE CategoryID = 2;
+
+
+SELECT AVG(Quantity) FROM order_details;
+
+
+SELECT SUM(Price) FROM products WHERE CategoryID = 1;
+
+
+SELECT SUM(Quantity) FROM order_details;
+
+
+SELECT SUM(Quantity) FROM order_details WHERE OrderID = 10248;
+
+
