@@ -1,0 +1,12 @@
+SELECT MIN(Price) FROM products;
+
+
+SELECT MAX(Price) FROM products;
+
+
+SELECT ProductName FROM products WHERE Price = 2.5;
+
+
+SELECT ProductName FROM products WHERE Price = 263.5;
+
+
