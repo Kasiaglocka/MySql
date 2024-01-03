@@ -1,0 +1,27 @@
+SELECT ContactName FROM customers;
+
+
+SELECT ContactName AS Klienci FROM customers;
+
+
+SELECT ContactName AS Klienci, City AS Miasto FROM customers;
+
+
+SELECT CustomerID AS NrKlienta FROM customers;
+
+
+SELECT OrderDate AS Data Zamowienia FROM orders;
+
+
+SELECT ProductName AS NazwaProduktu, Price AS Cena FROM products;
+
+
+SELECT PostalCode AS KodPocztowy FROM suppliers;
+
+
+SELECT LastName AS Nazwisko, FirstName AS Imie FROM employees;
+
+
+SELECT City AS Miasto, Country AS Panstwo FROM customers;
+
+
