@@ -1,0 +1,16 @@
+UPDATE customers SET CustomerName = "Jan Nowak" WHERE CustomerID = 4;
+
+
+UPDATE customers SET Country = "Meksyk" WHERE Country = "Mexico";
+
+
+SELECT * FROM orders ORDER BY OrderDate ASC;
+
+
+UPDATE orders SET ShipperID = 1 WHERE OrderDate BETWEEN "1996-07-04" AND "1996-07-08";
+
+
+
+
+
+
