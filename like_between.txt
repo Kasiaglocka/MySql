@@ -1,0 +1,24 @@
+SELECT * FROM customers WHERE ContactName Like '% Anders';
+
+
+SELECT * FROM customers WHERE PostalCode LIKE '%0';
+
+
+SELECT * FROM customers WHERE ContactName Like 'Christina %';
+
+
+SELECT * FROM customers WHERE PostalCode LIKE '4%';
+
+
+SELECT * FROM customers WHERE Country LIKE '%a%';
+
+
+SELECT * FROM orders WHERE OrderDate BETWEEN '1996-07-12' AND '1996-07-22';
+
+
+SELECT * FROM orders WHERE OrderDate >= '1996-07-12' AND OrderDate <='1996-07-22';
+
+
+SELECT * FROM employees WHERE BirthDate BETWEEN '1955-03-04' AND '1968-12-08';
+
+
