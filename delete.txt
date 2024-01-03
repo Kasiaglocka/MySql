@@ -1,0 +1,12 @@
+DELETE FROM shippers WHERE ShipperID = 4;
+
+
+INSERT INTO shippers VALUES("", "Fedex", "111-111-111");
+
+
+
+DELETE FROM shippers WHERE ShipperID = 5;
+
+
+
+
