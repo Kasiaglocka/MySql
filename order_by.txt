@@ -1,0 +1,30 @@
+SELECT * FROM orders ORDER BY EmployeeID;
+
+
+SELECT * FROM orders ORDER BY EmployeeID ASC;
+
+
+SELECT * FROM orders ORDER BY EmployeeID DESC;
+
+
+SELECT * FROM orders ORDER BY EmployeeID DESC, ShipperID ASC;
+
+
+SELECT * FROM products ORDER BY Price ASC;
+
+
+SELECT* FROM products ORDER BY ProductName;
+
+
+SELECT * FROM order_details ORDER BY Quantity DESC;
+
+
+SELECT * FROM orders ORDER BY OrderDate;
+
+
+SELECT * FROM categories ORDER BY CategoryName DESC;
+
+
+SELECT * FROM categories ORDER BY Description;
+
+
