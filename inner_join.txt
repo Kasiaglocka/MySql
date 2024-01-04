@@ -1,0 +1,19 @@
+SELECTProductName, CategoryID, Price FROM products;
+
+
+SELECT ProductName, CategoryName, Price FROM products INNER JOIN categories ON products.CategoryID = categories.CategoryID;
+
+
+SELECT ProductName, Quantity FROM order_details INNER JOIN products ON order_details.ProductID = products.ProductID;
+
+
+SELECT ProductName, Quantity FROM order_details INNER JOIN products ON order_details.ProductID = products.ProductID GROUP BY ProductName;
+
+
+SELECT ProductName, Price FROM products INNER JOIN suppliers ON products.SupplierID = suppliers.SupplierID GROUP BY Price;
+
+
+SELECT CustomerName, City, Country FROM customers INNER JOIN orders ON customers.CustomerID = orders.CustomerID GROUP BY CustomerName;
+
+
+SELECT FirstName, LastName, BirthDate FROM employees INNER JOIN orders ON employees.EmployeeID = orders.EmployeeID GROUP BY BirthDate DESC;
