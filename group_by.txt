@@ -1,0 +1,15 @@
+SELECT COUNT(CustomerName), Country FROM customers GROUP BY Country;
+
+
+SELECT COUNT(CustomerName), Country FROM customers GROUP BY Country ORDER BY COUNT(CustomerName);
+
+
+SELECT COUNT(CustomerName), Country FROM customers GROUP BY Country ORDER BY COUNT(CustomerName) DESC;
+
+
+SELECT COUNT(CustomerName) AS Ilosc, Country FROM customers GROUP BY Country ORDER BY COUNT(CustomerName) DESC;
+
+
+SELECT SUM(Price), CategoryID FROM products GROUP BY CategoryID;
+
+
