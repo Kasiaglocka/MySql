@@ -1,0 +1,13 @@
+INSERT INTO categories VALUES(9,"Sport","Testowy opis");
+
+
+INSERT INTO categories VALUES("","Zabawki","Testowy opis zabawki");
+
+
+INSERT INTO shippers VALUES("", "FedEx", "999-999-999");
+
+
+INSERT INTO products VALUES ("","PlayStation", "7", "3", "3kg box", "90");
+
+
+INSERT INTO `customers` VALUES ("", "Chandler Bing", "Chanandler Bong", "Jemenska 1", "Jemen", "12221", "Jemen");
