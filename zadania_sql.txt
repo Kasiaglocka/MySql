@@ -1,0 +1,42 @@
+create table user 
+( 
+id 			int auto_increment primary key, 
+surname 	varchar(255) not null, 
+username 	varchar(255) not null, 
+password 	varchar(255) not null, 
+email 		varchar(255) not null
+); 
+ 
+create table request_log 
+( 
+id         int auto_increment primary key, 
+action_url varchar(600) null, 
+time       int          null, 
+user_agent varchar(255) null, 
+user_id    int          null, 
+ip         varchar(60)  null
+); 
+
+
+/*Zapytania dla wskazanych tabel*/
+
+/*1. Jaki e-mail ma użytkownik o id 12? */
+
+SELECT email 
+FROM user 
+WHERE id = 12;
+
+
+/*2.Ilu użytkowników systemu nosi twoje imię? */
+
+SELECT COUNT(*) 
+FROM user 
+WHERE surname LIKE "%Katarzyna%";
+
+
+/*3.Czy użytkownik Jan Kowalski wykonał jakąś akcję w systemie 1.04.2023? */
+
+SELECT action_url , user_id 
+FROM request_log AS req 
+JOIN user AS usr ON req.user_id = usr.id 
+WHERE usr.surname = "Jan Kowalski" AND time BETWEEN 1680307200 AND 1680393600;
